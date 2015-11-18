@@ -6,6 +6,7 @@ RUN apt-get update && \
     add-apt-repository -y ppa:nginx/stable && \
     apt-get update && \
     apt-get install -y nginx-full && \
+    mkdir -p /tmp/{1,2,3,4,5,6,7,8,9,10} \
     apt-get clean
 
 # forward request and error logs to docker log collector
